@@ -243,11 +243,11 @@
       <!-- TODO: Replace with your teaser video -->
       <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
         <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
+        <source src="static/videos/video_compressed.mp4" type="video/mp4">
       </video>
       <!-- TODO: Replace with your video description -->
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        A short video walkthrough of the paper, including a brief demo. 
       </h2>
     </div>
   </div>
@@ -263,7 +263,7 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Designing transfer functions (TFs) for direct volume rendering is a fundamental yet labor-intensive task, as users need to carefully explore the relationship between voxel attributes and visual outcomes to reveal structures of interest. Despite advances in learning-based approaches, many existing methods depend on repeated user input. Furthermore, many methods relying on conventional data value-based TFs, which use voxel intensity or gradient information, often struggle to separate voxels into meaningful semantic groups. To address these problems, we present a framework that enables automatic TF design via multimodal large language model (MLLM)-assisted 2D semantic decomposition, requiring only minimal user input, namely the volume name and a projection axis. Starting from a single maximum intensity projection of the volume, our method transforms it into a semantic segmentation mask using an MLLM, which is then lifted into 3D as a sparse set of reliable voxel cues. To convert these sparse cues into a complete semantic representation, we introduce a voxel classification network trained with a confidence-aware propagation loss, resulting in dense voxel-level semantic assignments that are readily translated into TFs. Despite relying solely on single-image segmentation, our method achieves precise part-level separation. Evaluation on a range of volume datasets shows that ours produces better semantic renderings while significantly reducing the effort and time required for TF design compared to state-of-the-art techniques.
           </p>
         </div>
       </div>
