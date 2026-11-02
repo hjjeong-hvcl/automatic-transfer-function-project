@@ -1,0 +1,4 @@
+python3 main_st.py -O --data_str male_128_256_256 \
+  --spacing 1.00797 0.995861 1.57774 \
+  --mip_axis z \
+  --object_hint "head CT"
